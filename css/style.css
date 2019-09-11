@@ -5,7 +5,6 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  width: 100vw;
   margin: 0;
   padding: 50px 100px;
   font-family: 'Source Sans Pro', arial, sans-serif;
@@ -19,6 +18,9 @@ body * {
   color: #000 ;
 }
 
+div a {
+	box-shadow: 1px 0px 15px -3px rgba(91,169,217,0.3);
+}
 
 .timeline-main
 {
@@ -185,17 +187,19 @@ body * {
   width: 66%;
   padding-left: 30px;
 }
+
 .entry .body p {
-  line-height: 1.4em;
-}
-.entry .body p:first-child {
   margin-top: 0;
   font-weight: 400;
+  line-height: 1.4em;
 }
 .entry .body ul {
   color: #aaa;
   padding-left: 0;
   list-style-type: disc;
+}
+.entry .body p:not(#first){
+	margin-top: 10px;
 }
 
 .entry .body ul span
@@ -203,5 +207,3 @@ body * {
   color: #333;
   font-weight: 400;
 }
-
-
